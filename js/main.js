@@ -88,7 +88,7 @@ require([], function (){
           '//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js'
         ], function (ScrollReveal) {
           // 更多animation:
-          // http://daneden.github.io/animate.css/
+          // https://daneden.github.io/animate.css/
 /*          var animationNames = [*/
             //"pulse", "fadeIn","fadeInRight", "flipInX", "lightSpeedIn","rotateInUpLeft", "slideInUp","zoomIn",
             //],

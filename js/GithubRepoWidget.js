@@ -57,8 +57,8 @@
 				repo = _getAttribute(repoEle, 'data-repo', ''),
 				vendorName = repo.split('/')[0],
 				repoName = repo.split('/')[1],
-				vendorUrl = 'http://github.com/' + vendorName,
-				repoUrl = 'http://github.com/' + vendorName + '/' + repoName;
+				vendorUrl = 'https://github.com/' + vendorName,
+				repoUrl = 'https://github.com/' + vendorName + '/' + repoName;
 
 				widget = '<div class="github-box repo">'+
 					'<div class="github-box-title">'+

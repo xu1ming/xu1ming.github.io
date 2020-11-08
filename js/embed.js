@@ -1,5 +1,5 @@
-//HelloDog -  http://wsgzao.github.io/post/duoshuo/
-//More info: http://moxfive.xyz/2015/09/29/duosuo-style
+//HelloDog -  https://wsgzao.github.io/post/duoshuo/
+//More info: https://moxfive.xyz/2015/09/29/duosuo-style
 //移动客户端判断开始
 function checkMobile() {
     var isiPad = navigator.userAgent.match(/iPad/i) != null;
@@ -187,7 +187,7 @@ function os(e) {
     u = e.webkitNotifications,
     a = t.getElementsByTagName("head")[0] || t.getElementsByTagName("body")[0],
     f = e.navigator.userAgent,
-    l = t.location.protocol == "https:" ? "https:": "http:",
+    l = t.location.protocol == "https:" ? "https:": "https:",
     c = 0,
     h,
     p = function() {
@@ -239,7 +239,7 @@ function os(e) {
     b = l + "//static.duoshuo.com",
     w = e.DUOSHUO = {
         DOMAIN: "duoshuo.com",
-        REMOTE: "http://duoshuo.com",
+        REMOTE: "https://duoshuo.com",
         version: 140327,
         loaded: {
             jQuery: typeof jQuery != "undefined" && jQuery.fn.jquery >= "1.5",
@@ -249,7 +249,7 @@ function os(e) {
         libs: {
             jQuery: b + "/libs/embed.compat.js?24f8ca3f.js",
             smilies: b + "/libs/smilies.js?921e8eda.js",
-            mzadxN: "http://js.miaozhen.com/mz_ad_serving.js"
+            mzadxN: "https://js.miaozhen.com/mz_ad_serving.js"
         },
         sourceName: {
             weibo: "\u65b0\u6d6a\u5fae\u535a",
@@ -590,7 +590,7 @@ function os(e) {
     B = w.Callbacks = {},
     j = w.openDialog = function(e) {
         return w.dialog !== n && w.dialog.el.remove(),
-        w.dialog = (new H.Dialog('<div class="ds-dialog"><div class="ds-dialog-inner ds-rounded"><div class="ds-dialog-body">' + e + '</div><div class="ds-dialog-footer"><a href="http://duoshuo.com/" target="_blank" class="ds-logo"></a><span>\u793e\u4f1a\u5316\u8bc4\u8bba\u6846</span></div><a class="ds-dialog-close" href="javascript:void(0)" title="\u5173\u95ed"></a></div></div>')).open()
+        w.dialog = (new H.Dialog('<div class="ds-dialog"><div class="ds-dialog-inner ds-rounded"><div class="ds-dialog-body">' + e + '</div><div class="ds-dialog-footer"><a href="https://duoshuo.com/" target="_blank" class="ds-logo"></a><span>\u793e\u4f1a\u5316\u8bc4\u8bba\u6846</span></div><a class="ds-dialog-close" href="javascript:void(0)" title="\u5173\u95ed"></a></div></div>')).open()
     },
     F = w.injectScript = function(r, i) {
         var s = t.createElement("script"),
@@ -664,7 +664,7 @@ function os(e) {
             return '<div class="ds-login-buttons"><p>\u793e\u4ea4\u5e10\u53f7\u767b\u5f55:</p><div class="ds-social-links">' + J.serviceList() + J.additionalServices() + "</div></div>"
         },
         poweredBy: function(e) {
-            return '<p class="ds-powered-by"><a href="http://duoshuo.com" target="_blank" rel="nofollow">' + p(e) + "</a></p>"
+            return '<p class="ds-powered-by"><a href="https://duoshuo.com" target="_blank" rel="nofollow">' + p(e) + "</a></p>"
         },
         indicator: g('<div id="ds-indicator"></div>'),
         waitingImg: g('<div id="ds-waiting"></div>'),
@@ -1019,7 +1019,7 @@ function os(e) {
                 taobao: [480, 585]
             } [t] || [550, 400];
             return e.open(n + (n.indexOf("?") == -1 ? "?": "&") + w.param({
-                origin: r.origin || "http://" + r.host
+                origin: r.origin || "https://" + r.host
             }), "_blank", "width=" + i[0] + ",height=" + i[1] + ",toolbar=no,menubar=no,location=yes")
         },
         M = function(e, t) {
@@ -1049,7 +1049,7 @@ function os(e) {
         };
         if (e.postMessage) {
             var F = function(e) {
-                if (e.origin === "http://duoshuo.com") switch (e.data.type) {
+                if (e.origin === "https://duoshuo.com") switch (e.data.type) {
                 case "login":
                     r.href = e.data.redirectUrl;
                     break;
@@ -1188,7 +1188,7 @@ function os(e) {
                 return U(i(this).data("type")),
                 !1
             }).appendTo(t.body)),
-            e.html('<div id="ds-reset"><a class="ds-logo" href="http://duoshuo.com/" target="_blank" title="\u591a\u8bf4"></a><ul class="ds-notify-unread"><li' + (n.comments ? "": ' style="display:none;"') + '><a data-type="unread-comments" href="javascript:void(0);">\u4f60\u6709' + n.comments + "\u6761\u65b0\u56de\u590d</a></li><li" + (n.notifications ? "": ' style="display:none;"') + '><a data-type="unread-notifications" href="javascript:void(0);">\u4f60\u6709' + n.notifications + "\u6761\u7cfb\u7edf\u6d88\u606f</a></li></ul></div>")[(n.comments || n.notifications) && nt.data.notify_position !== "hidden" && !i(".ds-dialog")[0] ? "show": "hide"]()
+            e.html('<div id="ds-reset"><a class="ds-logo" href="https://duoshuo.com/" target="_blank" title="\u591a\u8bf4"></a><ul class="ds-notify-unread"><li' + (n.comments ? "": ' style="display:none;"') + '><a data-type="unread-comments" href="javascript:void(0);">\u4f60\u6709' + n.comments + "\u6761\u65b0\u56de\u590d</a></li><li" + (n.notifications ? "": ' style="display:none;"') + '><a data-type="unread-notifications" href="javascript:void(0);">\u4f60\u6709' + n.notifications + "\u6761\u7cfb\u7edf\u6d88\u606f</a></li></ul></div>")[(n.comments || n.notifications) && nt.data.notify_position !== "hidden" && !i(".ds-dialog")[0] ? "show": "hide"]()
         },
         it.on("reset", w.resetNotify),
         J.replybox = function(e, t) {
@@ -1272,7 +1272,7 @@ function os(e) {
                     var n = j('<h2>\u793e\u4ea4\u5e10\u53f7\u767b\u5f55</h2><div class="ds-icons-32">' + i.map(["weibo", "qq", "renren", "kaixin", "douban", "netease", "sohu"],
                     function(e) {
                         return '<a class="ds-' + e + '" href="' + J.loginUrl(e) + '">' + w.sourceName[e] + "</a>"
-                    }).join("") + "</div>" + (s.deny_anonymous ? "": '<h2>\u4f5c\u4e3a\u6e38\u5ba2\u7559\u8a00</h2><form><div class="ds-control-group"><input type="text" name="author_name" id="ds-dialog-name" value="' + p(rt.data.name) + '" required />' + '<label for="ds-dialog-name">\u540d\u5b57(\u5fc5\u586b)</label>' + "</div>" + (s.require_guest_email ? '<div class="ds-control-group"><input type="email" name="author_email" id="ds-dialog-email" value="' + p(rt.data.email) + '" required />' + '<label for="ds-dialog-email">\u90ae\u7bb1(\u5fc5\u586b)</label>' + "</div>": "") + (s.require_guest_url ? '<div class="ds-control-group"><input type="url" name="author_url" id="ds-dialog-url" placeholder="http://" value="' + p(rt.data.url || "") + '" />' + '<label for="ds-dialog-url">\u7f51\u5740(\u53ef\u9009)</label>' + "</div>": "") + '<button type="submit">\u53d1\u5e03</button>' + "</form>")),
+                    }).join("") + "</div>" + (s.deny_anonymous ? "": '<h2>\u4f5c\u4e3a\u6e38\u5ba2\u7559\u8a00</h2><form><div class="ds-control-group"><input type="text" name="author_name" id="ds-dialog-name" value="' + p(rt.data.name) + '" required />' + '<label for="ds-dialog-name">\u540d\u5b57(\u5fc5\u586b)</label>' + "</div>" + (s.require_guest_email ? '<div class="ds-control-group"><input type="email" name="author_email" id="ds-dialog-email" value="' + p(rt.data.email) + '" required />' + '<label for="ds-dialog-email">\u90ae\u7bb1(\u5fc5\u586b)</label>' + "</div>": "") + (s.require_guest_url ? '<div class="ds-control-group"><input type="url" name="author_url" id="ds-dialog-url" placeholder="https://" value="' + p(rt.data.url || "") + '" />' + '<label for="ds-dialog-url">\u7f51\u5740(\u53ef\u9009)</label>' + "</div>": "") + '<button type="submit">\u53d1\u5e03</button>' + "</form>")),
                     r = n.el.find(".ds-dialog").css("width", "320px");
                     M(r, ".ds-icons-32 a");
                     if (!s.deny_anonymous) {
@@ -1595,7 +1595,7 @@ function os(e) {
                 var n = "<ul>";
                 return i.each(q[e],
                 function(t, r) {
-                    var i = e.indexOf("\u5fae\u535a") === 0 ? "http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/" + r.replace("_org", "_thumb") : b + "/images/smilies/" + r;
+                    var i = e.indexOf("\u5fae\u535a") === 0 ? "https://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/" + r.replace("_org", "_thumb") : b + "/images/smilies/" + r;
                     e === "WordPress" && (t = " " + t + " "),
                     n += '<li><img src="' + i + '" title="' + p(t) + '" /></li>'
                 }),

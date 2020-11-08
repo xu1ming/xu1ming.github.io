@@ -11,13 +11,13 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
 我们先来看一个例子：你和妹子去购物中心吃饭，发现很多人在排队，这时只需要让前台在电脑上填上你需要的双人位，和你的手机">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Reactor">
-<meta property="og:url" content="http://xymlife.com/2016/01/16/Reactor/index.html">
+<meta property="og:url" content="https://xymlife.com/2016/01/16/Reactor/index.html">
 <meta property="og:site_name" content="XYM">
 <meta property="og:description" content="【Reactor】
 Reactor设计模式在高性能I/O框架中随处可见，例如redis，tornado，gevent，libevent等。
 Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。那么它是如何运作的呢？其实很多设计模式都来源于生活中的一些常见的处理事情的方式。
 我们先来看一个例子：你和妹子去购物中心吃饭，发现很多人在排队，这时只需要让前台在电脑上填上你需要的双人位，和你的手机">
-<meta property="og:image" content="http://7xq2as.com1.z0.glb.clouddn.com/1342687408_4917.jpg">
+<meta property="og:image" content="https://7xq2as.com1.z0.glb.clouddn.com/1342687408_4917.jpg">
 <meta property="og:updated_time" content="2016-01-20T16:42:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Reactor">
@@ -145,9 +145,9 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <li id="新浪微博"><a class="新浪微博" target="_blank" href="http://weibo.com/xymacmer/" title="新浪微博"></a></li>
+                                <li id="新浪微博"><a class="新浪微博" target="_blank" href="https://weibo.com/xymacmer/" title="新浪微博"></a></li>
                             
-                                <li id="GitHub"><a class="GitHub" target="_blank" href="http://github.com/xym2010" title="GitHub"></a></li>
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/xym2010" title="GitHub"></a></li>
                             
                                 <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
                             
@@ -167,9 +167,9 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.csdn.net/xymscau/">我的CSDN博客</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://blog.csdn.net/xymscau/">我的CSDN博客</a>
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.90arther.net">90Arther</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://www.90arther.net">90Arther</a>
                     
                     </div>
                 </section>
@@ -223,9 +223,9 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <li id="新浪微博"><a class="新浪微博" target="_blank" href="http://weibo.com/xymacmer/" title="新浪微博"></a></li>
+                                <li id="新浪微博"><a class="新浪微博" target="_blank" href="https://weibo.com/xymacmer/" title="新浪微博"></a></li>
                             
-                                <li id="GitHub"><a class="GitHub" target="_blank" href="http://github.com/xym2010" title="GitHub"></a></li>
+                                <li id="GitHub"><a class="GitHub" target="_blank" href="https://github.com/xym2010" title="GitHub"></a></li>
                             
                                 <li id="RSS"><a class="RSS" target="_blank" href="/atom.xml" title="RSS"></a></li>
                             
@@ -281,11 +281,11 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
 </blockquote>
 <a id="more"></a>
 <h4 id="u3010Reactor_u8BBE_u8BA1_u6A21_u5F0F_u3011"><a href="#u3010Reactor_u8BBE_u8BA1_u6A21_u5F0F_u3011" class="headerlink" title="【Reactor设计模式】"></a><strong>【Reactor设计模式】</strong></h4><blockquote>
-<p>在Reactor模式中，有5个关键的参与者。<a href="http://www.cnblogs.com/hzbook/archive/2012/07/19/2599698.html" target="_blank" rel="external">[引用]</a></p>
+<p>在Reactor模式中，有5个关键的参与者。<a href="https://www.cnblogs.com/hzbook/archive/2012/07/19/2599698.html" target="_blank" rel="external">[引用]</a></p>
 <p><strong>1. 描述符（handle）：</strong>由操作系统提供，用于识别每一个事件，如Socket描述符、文件描述符(fd)等。在Linux中，它用一个整数来表示。事件可以来自外部，如来自客户端的连接请求、数据等。事件也可以来自内部，如定时器事件。<br><strong>2. 同步事件分离器（demultiplexer）：</strong>是一个函数，用来等待一个或多个事件的发生。调用者会被阻塞，直到分离器分离的描述符集上有事件发生。Linux的select函数是一个经常被使用的分离器。<br><strong>3. 事件处理器接口（event handler）：</strong>是由一个或多个模板函数组成的接口。这些模板函数描述了和应用程序相关的对某个事件的操作。<br><strong>4. 具体的事件处理器（concrete event handler）：</strong>是事件处理器接口的实现。它实现了应用程序提供的某个服务。每个具体的事件处理器总和一个描述符相关。它使用描述符来识别事件、识别应用程序提供的服务。<br><strong>5. Reactor 管理器（reactor）：</strong>定义了一些接口，用于应用程序控制事件调度，以及应用程序注册、删除事件处理器和相关的描述符。它是事件处理器的调度核心。 Reactor管理器使用同步事件分离器来等待事件的发生。一旦事件发生，Reactor管理器先是分离每个事件，然后调度事件处理器，最后调用相关的模 板函数来处理这个事件。</p>
 <p>下面是Reactor结构图</p>
-<p><img src="http://7xq2as.com1.z0.glb.clouddn.com/1342687408_4917.jpg" alt="此处输入图片的描述"></p>
-<p>可能从上面来看比较难理解，那么我们从最开始的例子来分析这几个角色的作用。<br>你告诉前台MM <strong>（Reactor：负责后面的所有操作的调度）</strong>你需要一个双人位<strong>（handle：就是一个等待双人位的事件）</strong>，并告知手机号码<strong>（concrete event handler：当有双人位时，通过这个手机联系你，是具体的事件的处理方法）</strong>，而她会往她的电脑中添加一条记录<strong>（event handler：记录着双人位和你的联系方式，将事件和处理方式绑定到一起）</strong>，当某一桌双人位结账时，电脑从一堆排号信息中自动检测到有空余双人位<strong>（demultiplexer：将空余双人位事件从其他还在等待发生的事件中分离出来）</strong>，前台MM根据电脑记录找到你的电话号码，然后通过电话通知你可以前来就餐。<br>希望到这里你已经把Reactor的各个角色的作用弄清楚了，下次就可以去读一些使用Reactor设计模式的源码了，这里推荐 <a href="http://blog.csdn.net/sparkliang/article/details/5202394" target="_blank" rel="external">libevent</a> 。</p>
+<p><img src="https://7xq2as.com1.z0.glb.clouddn.com/1342687408_4917.jpg" alt="此处输入图片的描述"></p>
+<p>可能从上面来看比较难理解，那么我们从最开始的例子来分析这几个角色的作用。<br>你告诉前台MM <strong>（Reactor：负责后面的所有操作的调度）</strong>你需要一个双人位<strong>（handle：就是一个等待双人位的事件）</strong>，并告知手机号码<strong>（concrete event handler：当有双人位时，通过这个手机联系你，是具体的事件的处理方法）</strong>，而她会往她的电脑中添加一条记录<strong>（event handler：记录着双人位和你的联系方式，将事件和处理方式绑定到一起）</strong>，当某一桌双人位结账时，电脑从一堆排号信息中自动检测到有空余双人位<strong>（demultiplexer：将空余双人位事件从其他还在等待发生的事件中分离出来）</strong>，前台MM根据电脑记录找到你的电话号码，然后通过电话通知你可以前来就餐。<br>希望到这里你已经把Reactor的各个角色的作用弄清楚了，下次就可以去读一些使用Reactor设计模式的源码了，这里推荐 <a href="https://blog.csdn.net/sparkliang/article/details/5202394" target="_blank" rel="external">libevent</a> 。</p>
 </blockquote>
 <h4 id="u3010Reactor_u7684_u7279_u70B9_u3011"><a href="#u3010Reactor_u7684_u7279_u70B9_u3011" class="headerlink" title="【Reactor的特点】"></a><strong>【Reactor的特点】</strong></h4><blockquote>
 <p>最后总结一下Reactor的优点：<br><strong>1. 响应快：</strong>不必为单个同步时间所阻塞，虽然Reactor本身依然是同步的。<br><strong>2. 编程相对简单：</strong> 可以最大程度的避免复杂的多线程及同步问题，并且避免了多线程/进程的切换开销。<br><strong>3. 可扩展性：</strong> 可以方便的通过增加Reactor实例个数来充分利用CPU资源。<br><strong>4. 可复用性：</strong> reactor框架本身与具体事件处理逻辑无关，具有很高的复用性。</p>
@@ -303,13 +303,13 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
         <p><span>发布时间:</span>2016年01月16日 - 01时39分</p>
         <p><span>最后更新:</span>2016年01月21日 - 00时42分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/01/16/Reactor/" title="Reactor">http://xymlife.com/2016/01/16/Reactor/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://xymlife.com/2016/01/16/Reactor/　　作者: XYM" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/01/16/Reactor/" title="Reactor">https://xymlife.com/2016/01/16/Reactor/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://xymlife.com/2016/01/16/Reactor/　　作者: XYM" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -350,7 +350,7 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
 
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
 <script>
     var valueHide = "隐藏目录";
     var valueShow = "显示目录";
@@ -392,7 +392,7 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
     </div>
     <script>
         window._bd_share_config={
-            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
     </script>
 </div>
 
@@ -401,7 +401,7 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/01/16/Reactor/" data-title="Reactor" data-url="http://xymlife.com/2016/01/16/Reactor/"></div>
+    <div class="ds-thread" data-thread-key="2016/01/16/Reactor/" data-title="Reactor" data-url="https://xymlife.com/2016/01/16/Reactor/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -409,8 +409,8 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
     (function() {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
-        <!--ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';-->
-        ds.src = "http://xymlife.com/js/embed.js"
+        <!--ds.src = (document.location.protocol == 'https:' ? 'https:' : 'https:') + '//static.duoshuo.com/embed.js';-->
+        ds.src = "https://xymlife.com/js/embed.js"
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0] 
          || document.getElementsByTagName('body')[0]).appendChild(ds);
@@ -441,7 +441,7 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
     </div>
 
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/python_mro/">你真的理解Python中MRO算法吗？</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/21/GoogleCloud/">Google Cloud初体验</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/02/07/打造自己的Python编码环境/">打造自己的Python编码环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/24/用redis实现有优先级的celery/">用redis实现有优先级的"celery"</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/18/meinheld为何比gevent高效？/">meinheld为何比gevent高效？</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/后缀数组小结/">后缀数组小结</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/Reactor/">Reactor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/13/IO多路复用/">I/O多路复用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/09/Linux 启动过程/">Linux 启动过程</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/08/Arch/">Arch</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/22/redis/">Redis</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/03/11/ratproxy/">ubuntu ratproxy安装使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/03/09/hexo-skill/">hexo常用技巧</a></li></ul>
-    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
         $(".post-list-item a").attr("target","_blank");
@@ -476,7 +476,7 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
                 &copy; 2016 XYM
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的静态博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减双栏 Hexo 博客主题">Yelee</a> by MOxFIVE
+                <a href="https://hexo.io/" target="_blank" title="快速、简洁且高效的静态博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减双栏 Hexo 博客主题">Yelee</a> by MOxFIVE
             </div>
         </div>
         
@@ -504,7 +504,7 @@ Reactor可以翻译为反应器，是一种基于事件驱动的设计模式。�
 </footer>
     </div>
     
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="/js/main.js" type="text/javascript"></script>
 
     <script>
