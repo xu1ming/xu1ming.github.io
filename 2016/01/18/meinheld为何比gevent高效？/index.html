@@ -9,7 +9,7 @@
 两者都是高性能的WSGI兼容的web服务器。既然是同种东西，必然有对比，网上有挺多benchmark，我也做过对应的benchmark，不过没有整理，这里推荐一下网上的一篇benchmark，能够看出meinheld的性能确实好得令人意外。那么为什么meinheld会比gevent性能高这么多呢？我们从底层实现来看看，他究竟做了一些什么。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="meinheld为何比gevent高效？">
-<meta property="og:url" content="https://xymlife.com/2016/01/18/meinheld为何比gevent高效？/index.html">
+<meta property="og:url" content="https://xu1ming.github.io/2016/01/18/meinheld为何比gevent高效？/index.html">
 <meta property="og:site_name" content="XYM">
 <meta property="og:description" content="【前言】
 两者都是高性能的WSGI兼容的web服务器。既然是同种东西，必然有对比，网上有挺多benchmark，我也做过对应的benchmark，不过没有整理，这里推荐一下网上的一篇benchmark，能够看出meinheld的性能确实好得令人意外。那么为什么meinheld会比gevent性能高这么多呢？我们从底层实现来看看，他究竟做了一些什么。">
@@ -278,8 +278,8 @@
 <p><strong>协程：又称微线程，纤程。</strong><br>协程的这种“挂起”和“唤醒”机制实质上是将一个过程切分成了若干个子过程，给了我们一种以扁平的方式来使用事件回调模型。优点：共享进程的上下文，一个进程可以创建百万，千万的coroutine。</p>
 </blockquote>
 <h4 id="u3010libevent_u3011"><a href="#u3010libevent_u3011" class="headerlink" title="【libevent】"></a><strong>【libevent】</strong></h4><blockquote>
-<p>libevent是一个事件驱动的网络库，主要设计模式是<a href="https://www.xymlife.com/2016/01/16/Reactor/" target="_blank" rel="external">Reactor（反应器）</a>。<br>程序通过Libevent框架注册相应的事件和回调函数；当这些事件发生时，Libevent会调用这些回调函数处理相应的事件（I/O读写、定时和信号）。整个过程都是异步高效的。想看具体源码实现的请移步<a href="https://blog.csdn.net/sparkliang/article/details/5202394" target="_blank" rel="external">这里</a>。这里我们只看主要处理部分event_base_loop。</p>
-<p>简要说明event_base_loop实现。<br><strong>事件：</strong>首先loop中要处理的事件有3种，一种是计时事件（timeout触发），一种是普通<a href="https://www.xymlife.com/2016/01/13/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/" target="_blank" rel="external">I/O</a>事件（select, poll，epoll），还有一种信号事件（signal），其中信号事件最终也是被转换成普通I/O事件被监听。</p>
+<p>libevent是一个事件驱动的网络库，主要设计模式是<a href="https://www.xu1ming.github.io/2016/01/16/Reactor/" target="_blank" rel="external">Reactor（反应器）</a>。<br>程序通过Libevent框架注册相应的事件和回调函数；当这些事件发生时，Libevent会调用这些回调函数处理相应的事件（I/O读写、定时和信号）。整个过程都是异步高效的。想看具体源码实现的请移步<a href="https://blog.csdn.net/sparkliang/article/details/5202394" target="_blank" rel="external">这里</a>。这里我们只看主要处理部分event_base_loop。</p>
+<p>简要说明event_base_loop实现。<br><strong>事件：</strong>首先loop中要处理的事件有3种，一种是计时事件（timeout触发），一种是普通<a href="https://www.xu1ming.github.io/2016/01/13/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/" target="_blank" rel="external">I/O</a>事件（select, poll，epoll），还有一种信号事件（signal），其中信号事件最终也是被转换成普通I/O事件被监听。</p>
 <p><strong>流程：</strong></p>
 <ol>
 <li>先通过Timer最小堆（以时间为排序的键）找出至少要等待的时间。（代码中的timeout_next()函数）。</li>
@@ -324,8 +324,8 @@
         <p><span>发布时间:</span>2016年01月18日 - 00时54分</p>
         <p><span>最后更新:</span>2016年01月21日 - 00时42分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/01/18/meinheld为何比gevent高效？/" title="meinheld为何比gevent高效？">https://xymlife.com/2016/01/18/meinheld为何比gevent高效？/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://xymlife.com/2016/01/18/meinheld为何比gevent高效？/　　作者: XYM" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/01/18/meinheld为何比gevent高效？/" title="meinheld为何比gevent高效？">https://xu1ming.github.io/2016/01/18/meinheld为何比gevent高效？/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://xu1ming.github.io/2016/01/18/meinheld为何比gevent高效？/　　作者: XYM" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -422,7 +422,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/01/18/meinheld为何比gevent高效？/" data-title="meinheld为何比gevent高效？" data-url="https://xymlife.com/2016/01/18/meinheld为何比gevent高效？/"></div>
+    <div class="ds-thread" data-thread-key="2016/01/18/meinheld为何比gevent高效？/" data-title="meinheld为何比gevent高效？" data-url="https://xu1ming.github.io/2016/01/18/meinheld为何比gevent高效？/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -431,7 +431,7 @@
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
         <!--ds.src = (document.location.protocol == 'https:' ? 'https:' : 'https:') + '//static.duoshuo.com/embed.js';-->
-        ds.src = "https://xymlife.com/js/embed.js"
+        ds.src = "https://xu1ming.github.io/js/embed.js"
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0] 
          || document.getElementsByTagName('body')[0]).appendChild(ds);

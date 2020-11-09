@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://xymlife.com</loc>
+        <loc>https://xu1ming.github.io</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
     
     <url>
-        <loc>https://xymlife.com/tags/index.html</loc>
+        <loc>https://xu1ming.github.io/tags/index.html</loc>
         <lastmod>2016-01-20T04:28:10.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://xymlife.com/404.html</loc>
+        <loc>https://xu1ming.github.io/404.html</loc>
         <lastmod>2016-01-19T15:47:30.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

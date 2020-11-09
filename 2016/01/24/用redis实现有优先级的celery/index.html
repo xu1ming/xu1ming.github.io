@@ -9,7 +9,7 @@
 对于异步任务处理，相信很多人首选celery，的确，celery处理异步任务非常强悍，使用简单，支持各种并发。但是，大家来看看我所遇到的一个应用场景：每次后台上传一个游戏母包，然后对这个母包处理（添加某种标识，比如id）生成多个游戏子包，其中有一些id号的包是要求尽快的处理的，剩下的可以闲时处理。这里就对要把一个母包分成两个任务来处理，其中一个是优先处理的，另一个是闲时处理。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用redis实现有优先级的"celery"">
-<meta property="og:url" content="https://xymlife.com/2016/01/24/用redis实现有优先级的celery/index.html">
+<meta property="og:url" content="https://xu1ming.github.io/2016/01/24/用redis实现有优先级的celery/index.html">
 <meta property="og:site_name" content="XYM">
 <meta property="og:description" content="【需求背景】
 对于异步任务处理，相信很多人首选celery，的确，celery处理异步任务非常强悍，使用简单，支持各种并发。但是，大家来看看我所遇到的一个应用场景：每次后台上传一个游戏母包，然后对这个母包处理（添加某种标识，比如id）生成多个游戏子包，其中有一些id号的包是要求尽快的处理的，剩下的可以闲时处理。这里就对要把一个母包分成两个任务来处理，其中一个是优先处理的，另一个是闲时处理。">
@@ -313,8 +313,8 @@
         <p><span>发布时间:</span>2016年01月24日 - 01时07分</p>
         <p><span>最后更新:</span>2016年01月24日 - 01时10分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/01/24/用redis实现有优先级的celery/" title="用redis实现有优先级的&quot;celery&quot;">https://xymlife.com/2016/01/24/用redis实现有优先级的celery/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://xymlife.com/2016/01/24/用redis实现有优先级的celery/　　作者: XYM" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/01/24/用redis实现有优先级的celery/" title="用redis实现有优先级的&quot;celery&quot;">https://xu1ming.github.io/2016/01/24/用redis实现有优先级的celery/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://xu1ming.github.io/2016/01/24/用redis实现有优先级的celery/　　作者: XYM" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -411,7 +411,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/01/24/用redis实现有优先级的celery/" data-title="用redis实现有优先级的&quot;celery&quot;" data-url="https://xymlife.com/2016/01/24/用redis实现有优先级的celery/"></div>
+    <div class="ds-thread" data-thread-key="2016/01/24/用redis实现有优先级的celery/" data-title="用redis实现有优先级的&quot;celery&quot;" data-url="https://xu1ming.github.io/2016/01/24/用redis实现有优先级的celery/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -420,7 +420,7 @@
         var ds = document.createElement('script');
         ds.type = 'text/javascript';ds.async = true;
         <!--ds.src = (document.location.protocol == 'https:' ? 'https:' : 'https:') + '//static.duoshuo.com/embed.js';-->
-        ds.src = "https://xymlife.com/js/embed.js"
+        ds.src = "https://xu1ming.github.io/js/embed.js"
         ds.charset = 'UTF-8';
         (document.getElementsByTagName('head')[0] 
          || document.getElementsByTagName('body')[0]).appendChild(ds);

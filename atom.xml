@@ -4,9 +4,9 @@
   <subtitle>念念不忘，必有回响。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://xymlife.com/"/>
+  <link href="https://xu1ming.github.io/"/>
   <updated>2016-11-04T07:32:42.000Z</updated>
-  <id>https://xymlife.com/</id>
+  <id>https://xu1ming.github.io/</id>
   
   <author>
     <name>XYM</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>你真的理解Python中MRO算法吗？</title>
-    <link href="https://xymlife.com/2016/05/22/python_mro/"/>
-    <id>https://xymlife.com/2016/05/22/python_mro/</id>
+    <link href="https://xu1ming.github.io/2016/05/22/python_mro/"/>
+    <id>https://xu1ming.github.io/2016/05/22/python_mro/</id>
     <published>2016-05-22T15:45:14.000Z</published>
     <updated>2016-11-04T07:32:42.000Z</updated>
     
@@ -84,7 +84,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;构成对应的图，如下其中橙色的线是改进的地方。&lt;br&gt;&lt;img src=&quot;https://img.daikuan0371.net/AC8ED8BE-EB39-42AF-B94A-DCF4025EBB2A.png&quot; alt=&quot;改进版&quot;&gt;&lt;/p&gt;
 &lt;p&gt;如果使用原来的算法，我们搞不清楚A和B谁在左边谁在右边，所以会选择其中之一,继续拓扑下去，其实这里已经是有歧义了不能够解析出正确的顺序，应该报错，这使我重新思考了左右的问题。&lt;br&gt;我们可以发现其中左右问题无非出现在两种情况，第一种情况是：图中E先继承C,再继承D；第二种情况是：先继承C的基类，再去继承D。针对这两种情况给出的方案就是图中添加的橙色的边，表示的是第一种情况的顺序问题,比如C-&amp;gt;D,就是表示E(C,D&amp;gt;中的继承顺序。&lt;br&gt;那么第二种情况怎么保证先C的基类，然后再考虑D呢。我们可以这么做，如果出现多个入度为0的点，我们先找是刚刚剪出来的点的基类的点。这里可以看之前官网的那个例子，在E点和C点选择的时候，因为E是B的基类点，所以先选它，其实这也很容易实现，只需要记录下每个节点的子类点（可能有多个）。&lt;br&gt;那么左右的问题也就解决了。  &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;最后欢迎大家订阅我的&lt;a href=&quot;https://xymlife.com&quot;&gt;博客&lt;/a&gt; &lt;a href=&quot;https://xymlife.com&quot;&gt;www.xymlife.com&lt;/a&gt; 或者开发者头条主题，你的支持是我前进的动力。共勉！喜欢就给个赞呗~&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最后欢迎大家订阅我的&lt;a href=&quot;https://xu1ming.github.io&quot;&gt;博客&lt;/a&gt; &lt;a href=&quot;https://xu1ming.github.io&quot;&gt;www.xu1ming.github.io&lt;/a&gt; 或者开发者头条主题，你的支持是我前进的动力。共勉！喜欢就给个赞呗~&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -100,20 +100,20 @@
     </summary>
     
     
-      <category term="class" scheme="https://xymlife.com/tags/class/"/>
+      <category term="class" scheme="https://xu1ming.github.io/tags/class/"/>
     
-      <category term="mixin" scheme="https://xymlife.com/tags/mixin/"/>
+      <category term="mixin" scheme="https://xu1ming.github.io/tags/mixin/"/>
     
-      <category term="mro" scheme="https://xymlife.com/tags/mro/"/>
+      <category term="mro" scheme="https://xu1ming.github.io/tags/mro/"/>
     
-      <category term="python" scheme="https://xymlife.com/tags/python/"/>
+      <category term="python" scheme="https://xu1ming.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Google Cloud初体验</title>
-    <link href="https://xymlife.com/2016/03/21/GoogleCloud/"/>
-    <id>https://xymlife.com/2016/03/21/GoogleCloud/</id>
+    <link href="https://xu1ming.github.io/2016/03/21/GoogleCloud/"/>
+    <id>https://xu1ming.github.io/2016/03/21/GoogleCloud/</id>
     <published>2016-03-21T06:51:14.000Z</published>
     <updated>2016-03-21T06:59:52.000Z</updated>
     
@@ -166,14 +166,14 @@
     </summary>
     
     
-      <category term="GoogleCloud" scheme="https://xymlife.com/tags/GoogleCloud/"/>
+      <category term="GoogleCloud" scheme="https://xu1ming.github.io/tags/GoogleCloud/"/>
     
   </entry>
   
   <entry>
     <title>打造自己的Python编码环境</title>
-    <link href="https://xymlife.com/2016/02/07/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84Python%E7%BC%96%E7%A0%81%E7%8E%AF%E5%A2%83/"/>
-    <id>https://xymlife.com/2016/02/07/打造自己的Python编码环境/</id>
+    <link href="https://xu1ming.github.io/2016/02/07/%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84Python%E7%BC%96%E7%A0%81%E7%8E%AF%E5%A2%83/"/>
+    <id>https://xu1ming.github.io/2016/02/07/打造自己的Python编码环境/</id>
     <published>2016-02-07T15:35:14.000Z</published>
     <updated>2016-05-28T12:59:01.000Z</updated>
     
@@ -233,22 +233,22 @@
     </summary>
     
     
-      <category term="Mac/python" scheme="https://xymlife.com/tags/Mac-python/"/>
+      <category term="Mac/python" scheme="https://xu1ming.github.io/tags/Mac-python/"/>
     
-      <category term="consolas" scheme="https://xymlife.com/tags/consolas/"/>
+      <category term="consolas" scheme="https://xu1ming.github.io/tags/consolas/"/>
     
-      <category term="iterm2" scheme="https://xymlife.com/tags/iterm2/"/>
+      <category term="iterm2" scheme="https://xu1ming.github.io/tags/iterm2/"/>
     
-      <category term="vim" scheme="https://xymlife.com/tags/vim/"/>
+      <category term="vim" scheme="https://xu1ming.github.io/tags/vim/"/>
     
-      <category term="zsh" scheme="https://xymlife.com/tags/zsh/"/>
+      <category term="zsh" scheme="https://xu1ming.github.io/tags/zsh/"/>
     
   </entry>
   
   <entry>
     <title>用redis实现有优先级的&quot;celery&quot;</title>
-    <link href="https://xymlife.com/2016/01/24/%E7%94%A8redis%E5%AE%9E%E7%8E%B0%E6%9C%89%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84celery/"/>
-    <id>https://xymlife.com/2016/01/24/用redis实现有优先级的celery/</id>
+    <link href="https://xu1ming.github.io/2016/01/24/%E7%94%A8redis%E5%AE%9E%E7%8E%B0%E6%9C%89%E4%BC%98%E5%85%88%E7%BA%A7%E7%9A%84celery/"/>
+    <id>https://xu1ming.github.io/2016/01/24/用redis实现有优先级的celery/</id>
     <published>2016-01-23T17:07:13.000Z</published>
     <updated>2016-01-23T17:10:27.000Z</updated>
     
@@ -298,20 +298,20 @@
     </summary>
     
     
-      <category term="celery" scheme="https://xymlife.com/tags/celery/"/>
+      <category term="celery" scheme="https://xu1ming.github.io/tags/celery/"/>
     
-      <category term="redis" scheme="https://xymlife.com/tags/redis/"/>
+      <category term="redis" scheme="https://xu1ming.github.io/tags/redis/"/>
     
-      <category term="supervisor" scheme="https://xymlife.com/tags/supervisor/"/>
+      <category term="supervisor" scheme="https://xu1ming.github.io/tags/supervisor/"/>
     
-      <category term="优先队列" scheme="https://xymlife.com/tags/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/"/>
+      <category term="优先队列" scheme="https://xu1ming.github.io/tags/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/"/>
     
   </entry>
   
   <entry>
     <title>meinheld为何比gevent高效？</title>
-    <link href="https://xymlife.com/2016/01/18/meinheld%E4%B8%BA%E4%BD%95%E6%AF%94gevent%E9%AB%98%E6%95%88%EF%BC%9F/"/>
-    <id>https://xymlife.com/2016/01/18/meinheld为何比gevent高效？/</id>
+    <link href="https://xu1ming.github.io/2016/01/18/meinheld%E4%B8%BA%E4%BD%95%E6%AF%94gevent%E9%AB%98%E6%95%88%EF%BC%9F/"/>
+    <id>https://xu1ming.github.io/2016/01/18/meinheld为何比gevent高效？/</id>
     <published>2016-01-17T16:54:28.000Z</published>
     <updated>2016-01-20T16:42:20.000Z</updated>
     
@@ -327,8 +327,8 @@
 &lt;p&gt;&lt;strong&gt;协程：又称微线程，纤程。&lt;/strong&gt;&lt;br&gt;协程的这种“挂起”和“唤醒”机制实质上是将一个过程切分成了若干个子过程，给了我们一种以扁平的方式来使用事件回调模型。优点：共享进程的上下文，一个进程可以创建百万，千万的coroutine。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&quot;u3010libevent_u3011&quot;&gt;&lt;a href=&quot;#u3010libevent_u3011&quot; class=&quot;headerlink&quot; title=&quot;【libevent】&quot;&gt;&lt;/a&gt;&lt;strong&gt;【libevent】&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;libevent是一个事件驱动的网络库，主要设计模式是&lt;a href=&quot;https://www.xymlife.com/2016/01/16/Reactor/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Reactor（反应器）&lt;/a&gt;。&lt;br&gt;程序通过Libevent框架注册相应的事件和回调函数；当这些事件发生时，Libevent会调用这些回调函数处理相应的事件（I/O读写、定时和信号）。整个过程都是异步高效的。想看具体源码实现的请移步&lt;a href=&quot;https://blog.csdn.net/sparkliang/article/details/5202394&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;。这里我们只看主要处理部分event_base_loop。&lt;/p&gt;
-&lt;p&gt;简要说明event_base_loop实现。&lt;br&gt;&lt;strong&gt;事件：&lt;/strong&gt;首先loop中要处理的事件有3种，一种是计时事件（timeout触发），一种是普通&lt;a href=&quot;https://www.xymlife.com/2016/01/13/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;I/O&lt;/a&gt;事件（select, poll，epoll），还有一种信号事件（signal），其中信号事件最终也是被转换成普通I/O事件被监听。&lt;/p&gt;
+&lt;p&gt;libevent是一个事件驱动的网络库，主要设计模式是&lt;a href=&quot;https://www.xu1ming.github.io/2016/01/16/Reactor/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Reactor（反应器）&lt;/a&gt;。&lt;br&gt;程序通过Libevent框架注册相应的事件和回调函数；当这些事件发生时，Libevent会调用这些回调函数处理相应的事件（I/O读写、定时和信号）。整个过程都是异步高效的。想看具体源码实现的请移步&lt;a href=&quot;https://blog.csdn.net/sparkliang/article/details/5202394&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;。这里我们只看主要处理部分event_base_loop。&lt;/p&gt;
+&lt;p&gt;简要说明event_base_loop实现。&lt;br&gt;&lt;strong&gt;事件：&lt;/strong&gt;首先loop中要处理的事件有3种，一种是计时事件（timeout触发），一种是普通&lt;a href=&quot;https://www.xu1ming.github.io/2016/01/13/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;I/O&lt;/a&gt;事件（select, poll，epoll），还有一种信号事件（signal），其中信号事件最终也是被转换成普通I/O事件被监听。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;流程：&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;先通过Timer最小堆（以时间为排序的键）找出至少要等待的时间。（代码中的timeout_next()函数）。&lt;/li&gt;
@@ -371,22 +371,22 @@
     </summary>
     
     
-      <category term="I/O多路复用" scheme="https://xymlife.com/tags/I-O%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
+      <category term="I/O多路复用" scheme="https://xu1ming.github.io/tags/I-O%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
     
-      <category term="gevent" scheme="https://xymlife.com/tags/gevent/"/>
+      <category term="gevent" scheme="https://xu1ming.github.io/tags/gevent/"/>
     
-      <category term="libevent" scheme="https://xymlife.com/tags/libevent/"/>
+      <category term="libevent" scheme="https://xu1ming.github.io/tags/libevent/"/>
     
-      <category term="meinheld" scheme="https://xymlife.com/tags/meinheld/"/>
+      <category term="meinheld" scheme="https://xu1ming.github.io/tags/meinheld/"/>
     
-      <category term="picoev" scheme="https://xymlife.com/tags/picoev/"/>
+      <category term="picoev" scheme="https://xu1ming.github.io/tags/picoev/"/>
     
   </entry>
   
   <entry>
     <title>后缀数组小结</title>
-    <link href="https://xymlife.com/2016/01/16/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84%E5%B0%8F%E7%BB%93/"/>
-    <id>https://xymlife.com/2016/01/16/后缀数组小结/</id>
+    <link href="https://xu1ming.github.io/2016/01/16/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84%E5%B0%8F%E7%BB%93/"/>
+    <id>https://xu1ming.github.io/2016/01/16/后缀数组小结/</id>
     <published>2016-01-16T03:20:45.000Z</published>
     <updated>2016-01-23T17:09:10.000Z</updated>
     
@@ -454,20 +454,20 @@
     </summary>
     
     
-      <category term="后缀数组" scheme="https://xymlife.com/tags/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
+      <category term="后缀数组" scheme="https://xu1ming.github.io/tags/%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84/"/>
     
-      <category term="字符串处理" scheme="https://xymlife.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/"/>
+      <category term="字符串处理" scheme="https://xu1ming.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/"/>
     
-      <category term="排序" scheme="https://xymlife.com/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="https://xu1ming.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
-      <category term="算法" scheme="https://xymlife.com/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://xu1ming.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>Reactor</title>
-    <link href="https://xymlife.com/2016/01/16/Reactor/"/>
-    <id>https://xymlife.com/2016/01/16/Reactor/</id>
+    <link href="https://xu1ming.github.io/2016/01/16/Reactor/"/>
+    <id>https://xu1ming.github.io/2016/01/16/Reactor/</id>
     <published>2016-01-15T17:39:34.000Z</published>
     <updated>2016-01-20T16:42:30.000Z</updated>
     
@@ -504,22 +504,22 @@
     </summary>
     
     
-      <category term="I/O多路复用" scheme="https://xymlife.com/tags/I-O%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
+      <category term="I/O多路复用" scheme="https://xu1ming.github.io/tags/I-O%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
     
-      <category term="libevent" scheme="https://xymlife.com/tags/libevent/"/>
+      <category term="libevent" scheme="https://xu1ming.github.io/tags/libevent/"/>
     
-      <category term="reactor" scheme="https://xymlife.com/tags/reactor/"/>
+      <category term="reactor" scheme="https://xu1ming.github.io/tags/reactor/"/>
     
-      <category term="redis" scheme="https://xymlife.com/tags/redis/"/>
+      <category term="redis" scheme="https://xu1ming.github.io/tags/redis/"/>
     
-      <category term="事件驱动" scheme="https://xymlife.com/tags/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8/"/>
+      <category term="事件驱动" scheme="https://xu1ming.github.io/tags/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8/"/>
     
   </entry>
   
   <entry>
     <title>I/O多路复用</title>
-    <link href="https://xymlife.com/2016/01/13/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
-    <id>https://xymlife.com/2016/01/13/IO多路复用/</id>
+    <link href="https://xu1ming.github.io/2016/01/13/IO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
+    <id>https://xu1ming.github.io/2016/01/13/IO多路复用/</id>
     <published>2016-01-13T11:46:12.000Z</published>
     <updated>2016-01-20T16:42:04.000Z</updated>
     
@@ -577,16 +577,16 @@
     </summary>
     
     
-      <category term="I/O多路复用" scheme="https://xymlife.com/tags/I-O%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
+      <category term="I/O多路复用" scheme="https://xu1ming.github.io/tags/I-O%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
     
-      <category term="操作系统" scheme="https://xymlife.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+      <category term="操作系统" scheme="https://xu1ming.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>Linux 启动过程</title>
-    <link href="https://xymlife.com/2016/01/09/Linux%20%E5%90%AF%E5%8A%A8%E8%BF%87%E7%A8%8B/"/>
-    <id>https://xymlife.com/2016/01/09/Linux 启动过程/</id>
+    <link href="https://xu1ming.github.io/2016/01/09/Linux%20%E5%90%AF%E5%8A%A8%E8%BF%87%E7%A8%8B/"/>
+    <id>https://xu1ming.github.io/2016/01/09/Linux 启动过程/</id>
     <published>2016-01-09T12:10:21.000Z</published>
     <updated>2016-01-20T16:42:11.000Z</updated>
     
@@ -676,16 +676,16 @@
     </summary>
     
     
-      <category term="linux" scheme="https://xymlife.com/tags/linux/"/>
+      <category term="linux" scheme="https://xu1ming.github.io/tags/linux/"/>
     
-      <category term="操作系统" scheme="https://xymlife.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+      <category term="操作系统" scheme="https://xu1ming.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>Arch</title>
-    <link href="https://xymlife.com/2016/01/08/Arch/"/>
-    <id>https://xymlife.com/2016/01/08/Arch/</id>
+    <link href="https://xu1ming.github.io/2016/01/08/Arch/"/>
+    <id>https://xu1ming.github.io/2016/01/08/Arch/</id>
     <published>2016-01-07T16:41:09.000Z</published>
     <updated>2016-01-20T16:41:51.000Z</updated>
     
@@ -736,16 +736,16 @@
     </summary>
     
     
-      <category term="arch" scheme="https://xymlife.com/tags/arch/"/>
+      <category term="arch" scheme="https://xu1ming.github.io/tags/arch/"/>
     
-      <category term="linux" scheme="https://xymlife.com/tags/linux/"/>
+      <category term="linux" scheme="https://xu1ming.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>Redis</title>
-    <link href="https://xymlife.com/2015/06/22/redis/"/>
-    <id>https://xymlife.com/2015/06/22/redis/</id>
+    <link href="https://xu1ming.github.io/2015/06/22/redis/"/>
+    <id>https://xu1ming.github.io/2015/06/22/redis/</id>
     <published>2015-06-22T15:15:53.000Z</published>
     <updated>2016-01-20T16:42:35.000Z</updated>
     
@@ -851,16 +851,16 @@
     </summary>
     
     
-      <category term="redis" scheme="https://xymlife.com/tags/redis/"/>
+      <category term="redis" scheme="https://xu1ming.github.io/tags/redis/"/>
     
-      <category term="数据结构" scheme="https://xymlife.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="https://xu1ming.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>ubuntu ratproxy安装使用</title>
-    <link href="https://xymlife.com/2015/03/11/ratproxy/"/>
-    <id>https://xymlife.com/2015/03/11/ratproxy/</id>
+    <link href="https://xu1ming.github.io/2015/03/11/ratproxy/"/>
+    <id>https://xu1ming.github.io/2015/03/11/ratproxy/</id>
     <published>2015-03-11T02:48:26.000Z</published>
     <updated>2016-01-19T15:48:18.000Z</updated>
     
@@ -897,16 +897,16 @@
     </summary>
     
     
-      <category term="安全" scheme="https://xymlife.com/tags/%E5%AE%89%E5%85%A8/"/>
+      <category term="安全" scheme="https://xu1ming.github.io/tags/%E5%AE%89%E5%85%A8/"/>
     
-      <category term="笔记" scheme="https://xymlife.com/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://xu1ming.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>hexo常用技巧</title>
-    <link href="https://xymlife.com/2015/03/09/hexo-skill/"/>
-    <id>https://xymlife.com/2015/03/09/hexo-skill/</id>
+    <link href="https://xu1ming.github.io/2015/03/09/hexo-skill/"/>
+    <id>https://xu1ming.github.io/2015/03/09/hexo-skill/</id>
     <published>2015-03-09T07:09:09.000Z</published>
     <updated>2016-01-19T15:48:18.000Z</updated>
     
@@ -965,9 +965,9 @@
     </summary>
     
     
-      <category term="hexo" scheme="https://xymlife.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://xu1ming.github.io/tags/hexo/"/>
     
-      <category term="技能" scheme="https://xymlife.com/tags/%E6%8A%80%E8%83%BD/"/>
+      <category term="技能" scheme="https://xu1ming.github.io/tags/%E6%8A%80%E8%83%BD/"/>
     
   </entry>
   
