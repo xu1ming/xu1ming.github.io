@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="XYM">
 <meta property="og:description" content="【I/O多路复用技术】
 系统内核缓冲I/O数据，当某个I/O准备好后，系统通知应用程序该I/O可读或可写，这样应用程序可以马上完成相应的I/O操作，而不需要等待系统完成相应I/O操作，从而应用程序不必因等待I/O操作而阻塞。">
-<meta property="og:image" content="https://7xq2as.com1.z0.glb.clouddn.com/F5044F9E-F8BA-4D9F-A9BF-EBBE0ECDE09C.png">
+<meta property="og:image" content="https://img.daikuan0371.net/F5044F9E-F8BA-4D9F-A9BF-EBBE0ECDE09C.png">
 <meta property="og:updated_time" content="2016-01-20T16:42:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="I/O多路复用">
@@ -283,7 +283,7 @@
 <ol>
 <li>程序先调用了select函数对fd=1和fd=2的文件进行了可读监听，超时时间为5s。</li>
 <li>在接下来的5s内，被监听的两个文件没有全部就绪，直到超时时间到返回一个数值，表示有多少个就绪，这里只有一个所以return的是1，然后重新看readset，发现只有fd=1的位置是1，说明只有fd=1的文件就绪。</li>
-<li>接着可以去读取你要读取的文件（fd=1）了。<br><img src="https://7xq2as.com1.z0.glb.clouddn.com/F5044F9E-F8BA-4D9F-A9BF-EBBE0ECDE09C.png" alt="select流程图"></li>
+<li>接着可以去读取你要读取的文件（fd=1）了。<br><img src="https://img.daikuan0371.net/F5044F9E-F8BA-4D9F-A9BF-EBBE0ECDE09C.png" alt="select流程图"></li>
 </ol>
 <p><strong>缺点：</strong></p>
 <ol>
